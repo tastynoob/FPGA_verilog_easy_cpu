@@ -1,0 +1,39 @@
+//0起始地址
+wl r0,0 //恒为0
+wh r0,0
+wl r1,1 //恒为1
+wh r1,0
+
+//累加
+wl r2,0
+wh r2,0
+//i
+wl r3,1 
+wh r3,0
+//101
+wl r4,101 
+wh r4,0
+//k
+wl r5,0
+wh r5,0
+//地址16
+wl r6,16
+wh r6,0
+//地址22
+wl r7,22
+wh r7,0
+//地址16：
+lt r5,r3,r4
+if r5
+add r15,r7,r0
+add r2, r2, r3
+add r3,r3,r1
+add r15,r6,r0
+//地址22：
+wd r0,r2
+
+
+
+
+
+
